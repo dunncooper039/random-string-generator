@@ -7,11 +7,7 @@ const generateSentence = () => {
   const action = actions[Math.floor(Math.random() * (actions.length))]
   const comment = commentary[Math.floor(Math.random() * (commentary.length))]
   document.getElementById('output').innerHTML = subject + ' ' + action + ' ' + comment
-  console.log("It's running")
-}
-const calculatePossibleOutputs = () => {
-  document.getElementById('output').innerHTML = 'There are ' + (subjects.length * actions.length * commentary.length) + ' possible outputs at this time.'
+  console.log('There are ' + (subjects.length * actions.length * commentary.length) + ' possible outputs at this time.')
 }
 
 generate.onclick = generateSentence;
-outputCalc.onclick = calculatePossibleOutputs;

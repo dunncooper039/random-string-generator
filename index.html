@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--<link href="./Resources/CSS/index.css" type="text/css" rel="stylesheet">-->
+    <link href="./Resources/CSS/index.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
     <title>Random String Generator</title>
   </head>
   <body>
@@ -11,8 +14,9 @@
     <main>
       <h2>Press the button to generate a random phrase!</h2>
       <script src="script.js" defer></script>
-      <button id="generate">Generate</button>
-      <button id="outputCalc">Calculate possible responses</button>
+      <div id="button-container">
+        <button id="generate">Generate</button>
+      </div>
       <p id="output"></p>
     </main>
   </body>
