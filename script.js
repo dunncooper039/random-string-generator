@@ -171,7 +171,6 @@ const commentary = [
   "Right, old sport?",
   "I don't know how that's even possible."
 ]
-let element = document.querySelector('button');
 const generateSentence = () => {
   const subject = subjects[Math.floor(Math.random() * (subjects.length))]
   const action = actions[Math.floor(Math.random() * (actions.length))].replace("POSESSIVE", subject.posessive)
