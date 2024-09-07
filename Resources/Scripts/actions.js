@@ -98,5 +98,5 @@ export const actions = [
   "be placed on an IV of pumpkin spice",
   "set an elaborate series of traps in POSESSIVE home instead of just... calling the police",
   "get bored writing possible actions for this",
-  "create a watercolor painting of POSESSIVE dog"
+  "violate the Geneva Conventions, but only a little bit"
 ]
