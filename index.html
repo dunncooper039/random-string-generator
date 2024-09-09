@@ -2,17 +2,38 @@
 <html>
   <head>
     <link href="./Resources/CSS/index.css" type="text/css" rel="stylesheet">
+    <link href="./Resources/CSS/nav.css" type="text/css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./Resources/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
     <title>Random String Generator</title>
+    <meta name="description" content="Generate a random sentence or phrase! Over 1 million possibilities! Not AI-generated.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
-      <h1>Random String Generator</h1>
+      <nav class="desktop">
+        <img src="./Resources/nav-images/logo.svg" id="main-logo" alt="Logo">
+        <h2>Cooper Dunn Design</h2>
+        <ul>
+          <li><a href="https://dunncooper039.github.io">Home</a></li>
+          <li><a href="https://dunncooper039.github.io/design">Design</a></li>
+          <li><a href="https://dunncooper039.github.io/development">Development</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile">
+        <img src="./Resources/nav-images/logo.svg" id="main-logo" alt="Logo">
+        <h2>CDD</h2>
+        <ul>
+          <li><a href="https://dunncooper039.github.io"><img src="./Resources/nav-images/Home.svg" alt="Home"></a></li>
+          <li><a href="https://dunncooper039.github.io/design"><img src="./Resources/nav-images/Design.svg" alt="Design"></a></li>
+          <li><a href="https://dunncooper039.github.io/development"><img src="./Resources/nav-images/Development.svg" alt="Development"></a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <h1>Random String Generator</h1>
       <h2>Press the button to generate a random phrase!</h2>
       <p>Sometimes they're even coherent!</p>
       <script type="module" src="./Resources/Scripts/subjects.js"></script>

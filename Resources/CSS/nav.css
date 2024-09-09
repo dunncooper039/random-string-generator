@@ -1,0 +1,81 @@
+header {
+  align-content: center;
+  text-align: center;
+  padding: 0px 0px;
+  margin: 0px auto;
+  position: fixed;
+  z-index: 999999;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+nav h2 {
+  font-size: 2.25rem
+}
+nav {
+  background-color: black;
+  height: 4.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-self: end;
+  margin-left: auto;
+  margin-right: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li {
+  padding: 1rem;
+}
+.desktop nav a {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.mobile {
+  height: 4rem;
+}
+.mobile ul {
+  margin-right: 0px;
+  line-height: 0;
+}
+.mobile li img{
+  color:#B2CBDE;
+  height: 2rem;
+}
+.mobile h2 {
+  padding: 0px;
+  margin: 0.25rem;
+}
+#main-logo {
+  height: 80%;
+  padding: 2rem 2rem;
+}
+.mobile #main-logo {
+  padding: 2rem 0.5rem;
+}
+@media screen and (min-width: 480px) {
+  .mobile {
+    display: none;
+  }
+  main {
+    position: relative;
+    top: 4.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+  main {
+    position: relative;
+    top: 4rem;
+  }
+}
+a {
+  color: #B2CBDE;
+}
