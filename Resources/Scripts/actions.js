@@ -98,5 +98,9 @@ export const actions = [
   "be placed on an IV of pumpkin spice",
   "set an elaborate series of traps in POSESSIVE home instead of just... calling the police",
   "get bored writing possible actions for this",
-  "violate the Geneva Conventions, but only a little bit"
+  "violate the Geneva Conventions, but only a little bit",
+  "go spelunking",
+  "go careening off a cliff",
+  "create a monotheistic polytheism",
+  "violate FERPA"
 ]

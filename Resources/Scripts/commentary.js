@@ -98,5 +98,10 @@ export const commentary = [
   "No, this part isn't supposed to make sense.",
   "Add that to your quote book.",
   "[CAPTIONING PROVIDED BY A RANDOM PERSON AT A HELP CENTER IN INDIA]",
-  "...and that makes one million possible outputs!"
+  "...and that makes one million possible outputs!",
+  "HELP, I'M TRAPPED IN THE BASEMENT!!",
+  "Emails. They're not always bad.",
+  "Another one off the ol' bucket list.",
+  "And that's how I met your mother.",
+  "Lorem ipsum dolor sit amet."
 ]
