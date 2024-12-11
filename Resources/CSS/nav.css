@@ -30,11 +30,12 @@ nav ul {
 nav li {
   padding: 1rem;
 }
-.desktop nav a {
+.desktop a {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  text-decoration: none;
 }
 .mobile {
   height: 4rem;

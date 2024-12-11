@@ -100,11 +100,11 @@ export const subjects = [
   {text:"The entire country of Belgium wants to", punctuation:".", posessive:"their"},
   {text:"I want to", punctuation:".", posessive:"my"},
   {text:"A bass clarinet player will", punctuation:".", posessive:"their"},
-  {text:"Paul Simon and Julio are going to", punctuation:" down by the schoolyard", posessive:"their"},
+  {text:"Paul Simon and Julio are going to", punctuation:" down by the schoolyard.", posessive:"their"},
   {text:"The owner of TEMU is suspected to", punctuation:".", posessive:"his"},
   {text:"We bought a Super Bowl ad telling people to", punctuation:".", posessive:"their"},
   {text:"The cryptic message in invisible ink told me to", punctuation:".", posessive:"its"},
   {text:"The Illuminati made me", punctuation:".", posessive:"my"},
   {text:"Which presidential candiate is most likely to", punctuation:"?", posessive:"their"},
-  {text:"John Doe", punctuation:".", posessive:"his"}
+  {text:"John Doe will", punctuation:".", posessive:"his"}
 ]

@@ -103,5 +103,14 @@ export const commentary = [
   "Emails. They're not always bad.",
   "Another one off the ol' bucket list.",
   "And that's how I met your mother.",
-  "Lorem ipsum dolor sit amet."
+  "Lorem ipsum dolor sit amet.",
+  "Here, I brought mayonnaise to help you!",
+  "Very mindful. Very demure.",
+  "If that's not risky, I don't know what is.",
+  "But only on business days.",
+  "[Screaming]",
+  "JK",
+  "[Read | 10:47 P.M.]",
+  "They don't teach you that in the history textbooks.",
+  "Just wait for the beat drop."
 ]
