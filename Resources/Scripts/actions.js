@@ -105,7 +105,7 @@ export const actions = [
   "violate FERPA",
   "become forklift certified",
   "play FE!N with bagpipes",
-  "listen to Trans-Siberian Orchestra's hit song 'Christmas Eve/Sarajevo 12/24",
+  "listen to Trans-Siberian Orchestra's hit song 'Christmas Eve/Sarajevo 12/24'",
   "put a Starry on top of POSESSIVE tree",
   "scam an old lady out of 3 pieces of candy",
   "name POSESSIVE kid 'X Æ A-Xii'",

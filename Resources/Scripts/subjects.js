@@ -88,7 +88,7 @@ export const subjects = [
   {text:"Zach Bryan will", punctuation:".", posessive:"his"},
   {text:"Bruno Mars would", punctuation:" for you.", posessive:"your"},
   {text:"It would be so brat to", punctuation:".", posessive:"your"},
-  {text:"You know what they say.", punctuation:" or go home.", posessive:"your"},
+  {text:"You know what they say. You got to", punctuation:" or go home.", posessive:"your"},
   {text:"If you can't beat 'em,", punctuation:".", posessive:"their"},
   {text:"We might as well", punctuation:".", posessive:"our"},
   {text:"Which member of the FRIENDS cast is most likely to", punctuation:"?", posessive:"their"},
