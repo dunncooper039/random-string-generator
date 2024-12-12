@@ -1,9 +1,31 @@
 //Import data lists
-import { subjects } from "./subjects.js";
-import { actions } from "./actions.js";
-import { commentary } from "./commentary.js";
+async function getSubjects() {
+  const response = await fetch("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/Subjects");
+  const data = await response.json();
+  const subjects = data.map((row) => row);
+  return subjects;
+}
+const subjects = await getSubjects();
+
+async function getActions() {
+  const response = await fetch("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/Actions");
+  const data = await response.json();
+  const actions = data.map((row) => row.Text);
+  return actions;
+}
+const actions = await getActions();
+
+async function getCommentary() {
+  const response = await fetch("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/Commentary");
+  const data = await response.json();
+  const commentary = data.map((row) => row.Text);
+  return commentary;
+}
+const commentary = await getCommentary();
+
 //Log the number of possible outputs to the console
 console.log('There are ' + (subjects.length * actions.length * commentary.length) + ' possible outputs at this time.');
+
 //This is an attempt to reduce randomization bias, it shuffles an array
 function shuffleArray(array) {
   let newArray = array
@@ -26,9 +48,9 @@ function randomFromArray(array) {
 //Chains fragments together
 const generateSentence = () => {
   const subject = randomFromArray(subjects);
-  const action = randomFromArray(actions).replace("POSESSIVE", subject.posessive);
+  const action = randomFromArray(actions).replace("POSESSIVE", subject.Posessive);
   const comment = randomFromArray(commentary);
-  const output = subject.text + ' ' + action + subject.punctuation + ' ' + comment;
+  const output = subject.Text + ' ' + action + subject.Punctuation + ' ' + comment;
   document.getElementById('output').innerHTML = output;
 }
 //Event Handler
