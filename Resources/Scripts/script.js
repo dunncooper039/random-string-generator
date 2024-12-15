@@ -35,7 +35,7 @@ function shuffleArray(array) {
   }
   return newArray;
 }
-//Gets random item from arry
+//Gets random item from array
 function randomFromArray(array) {
   //Shuffle the array and apend it to itself to randomize the order somewhat more and reduce bias
   const doubleArray = shuffleArray(array).concat(shuffleArray(array))
