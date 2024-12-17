@@ -1,27 +1,13 @@
 //Import data lists
-async function getSubjects() {
-  const response = await fetch("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/Subjects");
+async function getArray(Sheet) {
+  const response = await fetch(join("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/", Sheet);
   const data = await response.json();
   const subjects = data.map((row) => row);
   return subjects;
 }
-const subjects = await getSubjects();
-
-async function getActions() {
-  const response = await fetch("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/Actions");
-  const data = await response.json();
-  const actions = data.map((row) => row.Text);
-  return actions;
-}
-const actions = await getActions();
-
-async function getCommentary() {
-  const response = await fetch("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/Commentary");
-  const data = await response.json();
-  const commentary = data.map((row) => row.Text);
-  return commentary;
-}
-const commentary = await getCommentary();
+const subjects = await getArray(Subjects);
+const actions = await getArray(Actions);
+const commentary = await getArray(Commentary);
 
 //Log the number of possible outputs to the console
 console.log('There are ' + (subjects.length * actions.length * commentary.length) + ' possible outputs at this time.');
@@ -48,9 +34,9 @@ function randomFromArray(array) {
 //Chains fragments together
 const generateSentence = () => {
   const subject = randomFromArray(subjects);
-  const action = randomFromArray(actions).replace("POSESSIVE", subject.Posessive);
+  const action = randomFromArray(actions);
   const comment = randomFromArray(commentary);
-  const output = subject.Text + ' ' + action + subject.Punctuation + ' ' + comment;
+  const output = subject.text + ' ' + action.text.replace("POSESSIVE", subject.posessive) + subject.punctuation + ' ' + comment.text;
   document.getElementById('output').innerHTML = output;
 }
 //Event Handler
