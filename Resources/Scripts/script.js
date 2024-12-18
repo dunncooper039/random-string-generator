@@ -5,9 +5,9 @@ async function getArray(Sheet) {
   const subjects = data.map((row) => row);
   return subjects;
 }
-const subjects = await getArray(Subjects);
-const actions = await getArray(Actions);
-const commentary = await getArray(Commentary);
+const subjects = await getArray("Subjects");
+const actions = await getArray("Actions");
+const commentary = await getArray("Commentary");
 
 //Log the number of possible outputs to the console
 console.log('There are ' + (subjects.length * actions.length * commentary.length) + ' possible outputs at this time.');
