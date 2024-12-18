@@ -1,6 +1,6 @@
 //Import data lists
 async function getArray(Sheet) {
-  const response = await fetch(join("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/", Sheet);
+  const response = await fetch(join("https://opensheet.elk.sh/1D-3Ww64q9K5n854zZwgwktHiM93eJwjSi7ua47UhRfM/", Sheet));
   const data = await response.json();
   const subjects = data.map((row) => row);
   return subjects;
