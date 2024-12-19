@@ -36,7 +36,17 @@ const generateSentence = () => {
   const subject = randomFromArray(subjects);
   const action = randomFromArray(actions);
   const comment = randomFromArray(commentary);
-  const output = subject.text + ' ' + action.text.replace("POSESSIVE", subject.posessive) + subject.punctuation + ' ' + comment.text;
+  let output = '';
+  //Check the tense of the subject and use the appropriate text
+  if (subject.tense == "future") {
+    output = subject.text + ' ' + action.text.replace("POSESSIVE", subject.posessive) + subject.punctuation + ' ' + comment.text;
+  } else if (subject.tense == "past") {
+    output = subject.text + ' ' + action.pastText.replace("POSESSIVE", subject.posessive) + subject.punctuation + ' ' + comment.text;
+  } else if (subject.tense == "present") {
+    output = subject.text + ' ' + action.presentText.replace("POSESSIVE", subject.posessive) + subject.punctuation + ' ' + comment.text;
+  } else if (subject.tense == "perfect") {
+    output = subject.text + ' ' + action.perfectText.replace("POSESSIVE", subject.posessive) + subject.punctuation + ' ' + comment.text;
+  }
   document.getElementById('output').innerHTML = output;
 }
 //Event Handler
