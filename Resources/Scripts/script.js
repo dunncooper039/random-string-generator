@@ -8,6 +8,7 @@ async function getArray(Sheet) {
 const subjects = await getArray("Subjects");
 const actions = await getArray("Actions");
 const commentary = await getArray("Commentary");
+generate.textContent = "Generate";
 
 //Log the number of possible outputs to the console
 console.log('There are ' + (subjects.length * actions.length * commentary.length) + ' possible outputs at this time.');
