@@ -50,6 +50,13 @@ p {
   align-self: center;
   margin: 10px auto;
 }
+#copy {
+  font-size: 0.5rem;
+  padding: 0.15rem;
+  margin: 0px;
+  border-radius: 7px;
+
+}
 button {
   margin: 15px;
   padding: 1rem;
@@ -64,9 +71,9 @@ button {
 button:hover {
   cursor: pointer;
 }
-#button-container {
+.button-container {
   display: flex;
-  margin: 20px auto;
+  margin: 0px auto;
   width: 100%;
   justify-content: center;
 }

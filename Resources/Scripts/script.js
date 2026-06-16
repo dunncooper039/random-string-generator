@@ -50,5 +50,14 @@ const generateSentence = () => {
   }
   document.getElementById('output').innerHTML = output;
 }
-//Event Handler
+const copyContent = async () => {
+  try {
+    await navigator.clipboard.writeText(output.innerHTML);
+    console.log('Content copied to clipboard');
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+}
+//Event Handlers
 generate.onclick = generateSentence;
+copy.onclick = copyContent;
