@@ -40,7 +40,7 @@ const generateSentence = () => {
   let output = '';
   //Check the tense of the subject and use the appropriate text
   if (subject.tense == "future") {
-    output = subject.text + ' ' + action.text.replace("POSSESSIVE", subject.possessive) + subject.punctuation + ' ' + comment.text;
+    output = subject.text + ' ' + action.futureText.replace("POSSESSIVE", subject.possessive) + subject.punctuation + ' ' + comment.text;
   } else if (subject.tense == "past") {
     output = subject.text + ' ' + action.pastText.replace("POSSESSIVE", subject.possessive) + subject.punctuation + ' ' + comment.text;
   } else if (subject.tense == "present") {
